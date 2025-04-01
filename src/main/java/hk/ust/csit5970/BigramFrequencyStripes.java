@@ -118,10 +118,6 @@ public class BigramFrequencyStripes extends Configured implements Tool {
 			}
 		}
 
-
-
-
-
 	}
 
 	/*
@@ -147,7 +143,6 @@ public class BigramFrequencyStripes extends Configured implements Tool {
 			SUM_STRIPES.clear();
 		}
 	}
-
 	/**
 	 * Creates an instance of this tool.
 	 */
@@ -218,7 +213,6 @@ public class BigramFrequencyStripes extends Configured implements Tool {
 		job.setMapOutputValueClass(HashMapStringIntWritable.class);
 		job.setOutputKeyClass(PairOfStrings.class);
 		job.setOutputValueClass(FloatWritable.class);
-
 		/*
 		 * A MapReduce program consists of four components: a mapper, a reducer,
 		 * an optional combiner, and an optional partitioner.
@@ -239,7 +233,6 @@ public class BigramFrequencyStripes extends Configured implements Tool {
 
 		return 0;
 	}
-
 	/**
 	 * Dispatches command-line arguments to the tool via the {@code ToolRunner}.
 	 */
