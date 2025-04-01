@@ -37,7 +37,6 @@ import java.util.HashMap;
  */
 public class CORPairs extends Configured implements Tool {
 	private static final Logger LOG = Logger.getLogger(CORPairs.class);
-
 	/*
 	 * TODO: Write your first-pass Mapper here.
 	 */
@@ -120,7 +119,6 @@ public class CORPairs extends Configured implements Tool {
 			}
 		}
 	}
-
 	/*
 	 * TODO: Write your second-pass Combiner here.
 	 */
@@ -224,7 +222,6 @@ public class CORPairs extends Configured implements Tool {
 			return (key.getLeftElement().hashCode() & Integer.MAX_VALUE) % numReduceTasks;
 		}
 	}
-
 	/**
 	 * Creates an instance of this tool.
 	 */
@@ -338,7 +335,6 @@ public class CORPairs extends Configured implements Tool {
 
 		return 0;
 	}
-
 	/**
 	 * Dispatches command-line arguments to the tool via the {@code ToolRunner}.
 	 */
