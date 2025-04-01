@@ -99,7 +99,6 @@ public class BigramFrequencyPairs extends Configured implements Tool {
 				float ratio = (float) sum / totalCount.get();
 				VALUE.set(ratio);
 			}
-
 			context.write(key, VALUE);
 		}
 	}
@@ -135,7 +134,6 @@ public class BigramFrequencyPairs extends Configured implements Tool {
 					% numReduceTasks;
 		}
 	}
-
 	/**
 	 * Creates an instance of this tool.
 	 */
@@ -145,7 +143,6 @@ public class BigramFrequencyPairs extends Configured implements Tool {
 	private static final String INPUT = "input";
 	private static final String OUTPUT = "output";
 	private static final String NUM_REDUCERS = "numReducers";
-
 	/**
 	 * Runs this tool.
 	 */
@@ -180,7 +177,6 @@ public class BigramFrequencyPairs extends Configured implements Tool {
 			ToolRunner.printGenericCommandUsage(System.out);
 			return -1;
 		}
-
 		String inputPath = cmdline.getOptionValue(INPUT);
 		String outputPath = cmdline.getOptionValue(OUTPUT);
 		int reduceTasks = cmdline.hasOption(NUM_REDUCERS) ? Integer
