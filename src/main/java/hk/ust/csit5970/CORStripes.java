@@ -58,7 +58,6 @@ public class CORStripes extends Configured implements Tool {
 			}
 		}
 	}
-
 	/*
 	 * TODO: Write your first-pass reducer here.
 	 */
@@ -113,7 +112,6 @@ public class CORStripes extends Configured implements Tool {
 			}
 		}
 	}
-
 	/*
 	 * TODO: Write your second-pass Combiner here.
 	 */
@@ -145,7 +143,6 @@ public class CORStripes extends Configured implements Tool {
 			context.write(key, mergedStripe);
 		}
 	}
-
 	/*
 	 * TODO: Write your second-pass Reducer here.
 	 */
